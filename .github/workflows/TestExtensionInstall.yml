@@ -42,6 +42,14 @@ jobs:
         run: |
           pip install duckdb
 
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: .
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.version }}
+
       - name: Run minor test
         shell: bash
         run: |
