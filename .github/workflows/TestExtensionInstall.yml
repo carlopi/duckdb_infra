@@ -46,7 +46,7 @@ jobs:
         run: |
           set PYTHONIOENCODING=utf-8
           echo "import duckdb" > test_extensions.py
-          echo "print(duckdb.__version__)" > test_extensions.py
-          echo "duckdb.install_extension('icu')" > test_extensions.py
-          echo "duckdb.load_extension('icu')" > test_extensions.py
+          echo "print(duckdb.__version__)" >> test_extensions.py
+          echo "duckdb.install_extension('icu')" >> test_extensions.py
+          echo "duckdb.load_extension('icu')" >> test_extensions.py
           python3 test_extensions.py
