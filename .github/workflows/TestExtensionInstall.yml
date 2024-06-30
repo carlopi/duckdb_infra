@@ -43,7 +43,7 @@ jobs:
 
       - name: Install duckdb
         run: |
-          pip install duckdb --update --pre
+          pip install duckdb --upgrade --pre
 
       - uses: actions/checkout@v4
         with:
