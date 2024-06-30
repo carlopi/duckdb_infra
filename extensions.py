@@ -5,7 +5,7 @@ import time
 print(duckdb.__version__)
 
 extension_list = ['aws', 'icu', 'fts', 'spatial', 'httpfs', 'tpch', 'tpcds', 'arrow', 'azure', 'excel', 'iceberg', 'inet', 'mysql', 'postgres', 'sqlite', 'sqlsmith', 'vss']
-community_extension_list = ['h3', 'scrooge', 'sqlite_scanner', 'quack']
+community_extension_list = ['h3', 'scrooge', 'quack']
 
 to_be_tested = random.sample(extension_list, 5)
 to_be_tested_community = random.sample(community_extension_list, 3)
